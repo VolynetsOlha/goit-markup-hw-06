@@ -12,6 +12,7 @@
   --set-gap: 24px;
   --hero-background-color: rgba(46, 47, 66, 0.7);
   --light-slate-border-color: #8e8f99;
+  --light-slate-modal-color: #8e8f99;
   --action-green-color: #31d0aa;
   --customers-icon-color: #afb1b8;
   --background-modal: rgba(46, 47, 66, 0.4);
@@ -721,4 +722,72 @@ button {
 .close-btn-modal:hover .close-btn-icon,
 .close-btn-modal:focus .close-btn-icon {
   fill: var(--white-color);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+.order-form-title {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+.label-text {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--light-slate-modal-color);
+  margin-bottom: 4px;
+}
+
+.order-form-input {
+  display: block;
+  margin-bottom: 26px;
+  padding-left: 38px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.order-form-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+}
+
+.send-btn-modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  background: var(--design-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }

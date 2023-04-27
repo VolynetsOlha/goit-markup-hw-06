@@ -429,13 +429,66 @@
       </div>
     </footer>
     <!--Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-btn-modal" data-modal-close>
           <svg class="close-btn-icon" width="8" height="8">
             <use href="./images/icon.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <form name="order_form" class="order-form">
+          <p class="order-form-title">
+            Leave your contacts and we will call you back
+          </p>
+          <label for="text">
+            <span class="label-text">Name</span>
+          </label>
+          <input
+            class="order-form-input"
+            id="text"
+            type="text"
+            name="user_name"
+            minlength="2"
+            pattern="^[a-zA-Z]+"
+            required
+          />
+          <label for="text">
+            <span class="label-text">Phone</span>
+          </label>
+          <input
+            class="order-form-input"
+            id="tel"
+            type="tel"
+            name="user_tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            required
+          />
+          <label for="text">
+            <span class="label-text">Email</span>
+          </label>
+          <input
+            class="order-form-input"
+            id="email"
+            type="email"
+            name="user_mail"
+            required
+          />
+          <label for="text">
+            <span class="label-text">Comment</span>
+          </label>
+          <textarea
+            class="order-form-textarea"
+            name="user_message"
+            placeholder="Text input"
+          ></textarea>
+          <input id="checkbox" type="checkbox" name="privacy_policy" required />
+          <label for="checkbox"
+            >I accept the terms and conditions of the
+            <a href="" class="link">Privacy Policy</a></label
+          >
+          <button type="submit" class="send-btn-modal">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
